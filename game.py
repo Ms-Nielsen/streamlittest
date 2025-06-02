@@ -26,9 +26,12 @@ def main():
   player1name = name_entries('1')
   if player1name!='':
     player2name=name_entries('2')
-
+    
+  p1guess=""
+  
   if player1name !='' and player2name!="":
     p1guess = getGuess(player1name)
+    
   if p1guess!='':
     p2guess = getGuess(player2name)
 
