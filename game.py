@@ -12,11 +12,9 @@ st.write("In this game, two players will compete to guess a number in the fastes
 
 time.sleep(3)
 
-def name_entries():
-  player1 = st.text_input("Enter name of player 1: ")
-  if player1 !='':
-    player2 = st.text_input("Enter name of player 2: ")
-    return player1, player2
+def name_entries(num):
+  player1 = st.text_input("Enter name of player " + num + ": ")
+  return player1
   
 def getGuess(name):
   st.write(name + " it is your turn.")
@@ -25,7 +23,9 @@ def getGuess(name):
   
 def main():
 
-  player1name, player2name = name_entries()
+  player1name = name_entries(1)
+  if player1name!='':
+    player2name=name_entries(2)
 
   if player1name !='' and player2name!="":
     p1guess = getGuess(player1name)
