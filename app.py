@@ -2,6 +2,8 @@ import streamlit as st
 
 st.write("You have entered a dark forest, would you like to take the left path or the right?")\
 
+st.text_input(int, "Enter a number between 1 and 10"
+
 if st.button("Turn Left"):
   st.write("You turned left")
 if st.button("Turn Right"):
