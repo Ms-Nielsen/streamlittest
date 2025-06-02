@@ -22,7 +22,7 @@ def getGuess(name):
   return guess
   
 def main():
-
+  player2name = ' '
   player1name = name_entries('1')
   
   if player1name!='':
