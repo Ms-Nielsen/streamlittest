@@ -16,7 +16,7 @@ def name_entries():
   player1 = st.text_input("Enter name of player 1: ")
   if player1 !='':
     player2 = st.text_input("Enter name of player 2: ")
-  return player1, player2
+    return player1, player2
   
 def getGuess(name):
   st.write(name + " it is your turn.")
