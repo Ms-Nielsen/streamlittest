@@ -16,9 +16,9 @@ def name_entries(num):
   player1 = st.text_input("Enter name of player " + num + ": ")
   return player1
   
-def getGuess(name):
+def getGuess(name1, name2):
   st.write(name + " it is your turn.")
-  guess = st.slider("Guess a number between 1 and 10", min_value = 1, max_value=10, on_change=getGuess(player2name))
+  guess = st.slider("Guess a number between 1 and 10", min_value = 1, max_value=10, on_change=getGuess(name2))
   return guess
   
 def main():
@@ -30,9 +30,7 @@ def main():
   p1guess=""
   
   if player1name !='' and player2name!="":
-    p1guess = getGuess(player1name)
+    p1guess = getGuess(player1name, player2name)
     
-  if p1guess!='':
-    p2guess = getGuess(player2name)
 
 main()
