@@ -18,7 +18,7 @@ def name_entries():
   return player1, player2
   
 def getGuess(name):
-  st.write(name + " it is your turn.)
+  st.write(name + " it is your turn.")
   guess = st.slider("Guess a number between 1 and 10", min_value = 1, max_value=10)
   return guess
 def main():
