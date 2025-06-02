@@ -14,7 +14,8 @@ time.sleep(3)
 
 def name_entries():
   player1 = st.text_input("Enter name of player 1: ")
-  player2 = st.text_input("Enter name of player 2: ")
+  if player1 !='':
+    player2 = st.text_input("Enter name of player 2: ")
   return player1, player2
   
 def getGuess(name):
@@ -28,5 +29,7 @@ def main():
 
   if player1name !='' and player2name!="":
     p1guess = getGuess(player1name)
+  if p1guess!='':
+    p2guess = getGuess(player2name)
 
 main()
