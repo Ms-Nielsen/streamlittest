@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.write('Hello world, today you two players will be playing a guessing game to guess a number between 1 and 10. You will each have three tries.')
+st.write("Hello world, today you two players will be playing a guessing game to guess a number between 1 and 10. You will each have three tries.")
 
 player1 = st.text_input("Enter name of player 1: ")
 player2 = st.text_input("Enter name of player 2: ")
