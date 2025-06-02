@@ -18,7 +18,7 @@ def name_entries(num):
   
 def getGuess(name):
   st.write(name + " it is your turn.")
-  guess = st.slider("Guess a number between 1 and 10", min_value = 1, max_value=10)
+  guess = st.slider(name + "Guess a number between 1 and 10", min_value = 1, max_value=10)
   return guess
   
 def main():
