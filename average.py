@@ -15,13 +15,14 @@ def main():
 def buttons():
   global count, total
   st.write("Do you want to enter another grade?")
-  if st.button("Yes"):
+  if st.button("Yes, enter grade " + str(count + 1)):
     count+=1
     grade = getGrade(count)
     total +=grade
     buttons()
     
-  if st.button("No"):
+  if st.button("No, " + str(count)+ " grades are enough."):
     average=total/count
     st.write("Your grade average is " + str(average))
+    
 main()
