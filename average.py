@@ -1,7 +1,7 @@
 import streamlit as st
 
 def getGrade(count):
-  grade = st.text_input("Enter grade" + str(count)
+  grade = st.text_input("Enter grade" + str(count))
   return grade
 
 def main():
