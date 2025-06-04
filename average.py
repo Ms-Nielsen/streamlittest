@@ -19,6 +19,7 @@ def buttons():
     count+=1
     grade = getGrade(count)
     total +=grade
+    st.write("Do you want to enter another grade?")
     buttons()
     
   if st.button("No, " + str(count)+ " grades are enough."):
