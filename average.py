@@ -1,18 +1,18 @@
 import streamlit as st
 
-def getGrade():
-  grade = st.text_input("Enter a grade")
+def getGrade(count):
+  grade = st.text_input("Enter grade" + str(count)
   return grade
 
 def main():
-  total = getGrade()
+  total = getGrade(count)
   count=1
-  
+  st.write("Do you want to enter another grade?")
   if st.button("Yes"):
-    grade = getGrade()
-    total +=grade
     count+=1
-  
+    grade = getGrade(count)
+    total +=grade
+    
   if st.button("No"):
     average=total/count
 
