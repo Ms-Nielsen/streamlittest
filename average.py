@@ -5,8 +5,9 @@ def getGrade(count):
   return grade
 
 def main():
-  total = getGrade(count)
   count=1
+  total = getGrade(count)
+  
   st.write("Do you want to enter another grade?")
   if st.button("Yes"):
     count+=1
