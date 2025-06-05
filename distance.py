@@ -7,13 +7,13 @@ def main():
   x2 = st.text_input("Enter the second x coordinate:")
   y2 = st.text_input("Enter the second y coordinate:")
 
-  x1=int(x1)
-  x2=int(x2)
-  y1=int(y1)
-  y2=int(y2)
-    
+ 
 
   if st.button("Calculate the distance!"):
+    x1=int(x1)
+    x2=int(x2)
+    y1=int(y1)
+    y2=int(y2)
     
     ans = calculateDist(x1, y1, x2, y2)
     ans_str = str(round(ans, 2))
@@ -21,6 +21,11 @@ def main():
     st.write("The distance is " + ans_str)
 
   if st.button("Calculate the midpoint!"):
+    x1=int(x1)
+    x2=int(x2)
+    y1=int(y1)
+    y2=int(y2)
+    
     midpoint = calculateMid(x1, y1, x2, y2)
   
     st.write("The midpoint is " + midpoint)
