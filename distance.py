@@ -13,7 +13,7 @@ def main():
 
     st.write("The distance is " + ans_str)
 
-def calculate(x1, y1, y2, y2):
+def calculate(x1, y1, x2, y2):
   xSubtract = x1 - x2
   ySubtract = y1 - y2
   
