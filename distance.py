@@ -21,7 +21,7 @@ def main():
 if st.button("Calculate the midpoint!"):
   midpoint = calculateMid(x1, y1, x2, y2)
 
-  st.write("The midpoint is " midpoint)
+  st.write("The midpoint is " + midpoint)
              
 
 def calculateDist(x1, y1, x2, y2):
