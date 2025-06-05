@@ -2,12 +2,17 @@ import math
 import streamlit as st
 
 def main():
-  x1 = int(st.text_input("Enter the first x coordinate:"))
-  y1 = int(st.text_input("Enter the first y coordinate:"))
-  x2 = int(st.text_input("Enter the second x coordinate:"))
-  y2 = int(st.text_input("Enter the second y coordinate:"))
+  x1 = st.text_input("Enter the first x coordinate:")
+  y1 = st.text_input("Enter the first y coordinate:")
+  x2 = st.text_input("Enter the second x coordinate:")
+  y2 = st.text_input("Enter the second y coordinate:")
 
   if st.button("Calculate the distance!"):
+    x1=int(x1)
+    x2=int(x2)
+    y1=int(y1)
+    y2=int(y2)
+    
     ans = calculate(x1, y1, x2, y2)
     ans_str = str(round(ans, 2))
 
