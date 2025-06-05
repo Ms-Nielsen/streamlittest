@@ -13,12 +13,18 @@ def main():
     y1=int(y1)
     y2=int(y2)
     
-    ans = calculate(x1, y1, x2, y2)
+    ans = calculateDist(x1, y1, x2, y2)
     ans_str = str(round(ans, 2))
 
     st.write("The distance is " + ans_str)
 
-def calculate(x1, y1, x2, y2):
+if st.button("Calculate the midpoint!"):
+  midpoint = calculateMid(x1, y1, x2, y2)
+
+  st.writw("The midpoint is " midpoint)
+             
+
+def calculateDist(x1, y1, x2, y2):
   xSubtract = x1 - x2
   ySubtract = y1 - y2
   
@@ -38,6 +44,13 @@ def calculate(x1, y1, x2, y2):
   answer = math.sqrt(add)
 
   return answer
+  
+def calculateMid(x1, y1, x2, y2):
+  xcoor = (x1 + x2)/2
+  ycoor = (y1 + y2)/2
 
+  midpt = ("(" + str(xcoor) + ", " + str(ycoor) + ")")
+
+  return midpt
 
 main()
