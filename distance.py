@@ -2,6 +2,8 @@ import math
 import streamlit as st
 
 def main():
+  st.write("Use the following app to calculate the distance or midpoint between two coordinate points (x1, y1) and (x2, y2)")
+  
   x1 = st.text_input("Enter the first x coordinate:")
   y1 = st.text_input("Enter the first y coordinate:")
   x2 = st.text_input("Enter the second x coordinate:")
